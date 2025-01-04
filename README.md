@@ -53,4 +53,5 @@ Este projeto está licenciado sob a Licença MIT
 
 ## Contato
 Autor: Thiago C H Moreira
+
 LinkedIn: https://www.linkedin.com/in/thiagochmoreira/
