@@ -1,9 +1,9 @@
 [package]
 name = "rust-br"
-version = "0.4.0"
+version = "1.0.1"
 edition = "2024"
 authors = ["Thiago C H Moreira <thiagochm@gmail.com>"]
-description = "Crate de Validadores para Documentos Brasileiros"
+description = "Valide documentos, e-mails e telefones de maneira fácil e eficiente para suas aplicações no Brasil."
 license = "MIT"
 repository = "https://github.com/ThiagoCHM/rust-br"
 documentation = "https://github.com/ThiagoCHM/rust-br/blob/main/README.md"

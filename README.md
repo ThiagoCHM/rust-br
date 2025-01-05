@@ -1,11 +1,15 @@
 # Rust-BR
 
-**Rust-BR** é uma crate desenvolvida para validar documentos brasileiros, como CPF e CNPJ, de forma simples e eficiente.
+**Rust-BR** é uma crate robusta e versátil desenvolvida para validar uma ampla gama de documentos e informações brasileiras, incluindo CPF, CNPJ, e muito mais, de maneira simples e eficiente.
 
 ## Descrição
+Inicialmente concebida para lidar com a validação de documentos essenciais como CPF, CNPJ e CNH, a Rust-BR se destaca como uma ferramenta indispensável para aplicações que envolvem o cadastro de pessoas físicas e jurídicas no Brasil.
 
-Esta crate fornece funções para validar documentos de CPF, CNPJ, CNH, dentre outros, essenciais para aplicações que lidam com cadastros de pessoas físicas e jurídicas no Brasil. 
-Vale a observação, não verificamos se determinado documento pertence a um certo indivíduo, mas se os dados inseridos atendem aos padrões estabelecidos pelos Orgãos Reguladores de cada um deste documentos.
+## Expansão de Funcionalidades
+Reconhecendo a crescente demanda por validações abrangentes, expandimos suas capacidades para incluir não apenas documentos, mas também e-mails, telefones e URLs. Todas essas funcionalidades são implementadas puramente com Rust Vanilla, sem a adição de dependências externas.
+
+## Importante
+É crucial destacar que a Rust-BR não verifica a associação de documentos a indivíduos específicos. Nossa função é assegurar que os dados fornecidos estejam em conformidade com os padrões estabelecidos pelos órgãos reguladores pertinentes a cada tipo de documento.
 
 ## Lista de Documentos
 
@@ -21,13 +25,19 @@ Vale a observação, não verificamos se determinado documento pertence a um cer
 
  * Aceita a entrada de caracteres maiúsculos e minusculos.
 
+## Lista de Validadores
+
+ • E-mail
+ • Telefone
+ • URL
+
 ## Instalação
 
 Para usar o **Rust-BR** em seu projeto, adicione a seguinte dependência ao seu `Cargo.toml`:
 
 ```toml
 [dependencies]
-rust-br = "0.4.0"
+rust-br = "1.0.1"
 ```
 
 ## Como Usar
