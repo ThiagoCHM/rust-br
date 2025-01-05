@@ -14,13 +14,21 @@ Reconhecendo a crescente demanda por validações abrangentes, expandimos suas c
 ## Lista de Documentos
 
  • CPF
+ 
  • CNPJ
+ 
  • CNH
+ 
  • Passaporte Brasileiro*
+ 
  • CTPS (Em Breve)
+ 
  • Título de Eleitor (Em Breve)
+ 
  • Certidão de Nascimento (Em Breve)
+ 
  • Certidão de Casamento (Em Breve)
+ 
  • Certidão de Óbito (Em Breve)
 
  * Aceita a entrada de caracteres maiúsculos e minusculos.
@@ -28,7 +36,9 @@ Reconhecendo a crescente demanda por validações abrangentes, expandimos suas c
 ## Lista de Validadores
 
  • E-mail
- • Telefone
+ 
+ • Telefone (Identifica Inclusive o Estado e Região)
+ 
  • URL
 
 ## Instalação
