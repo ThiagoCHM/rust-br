@@ -12,7 +12,7 @@ Para usar o **Rust-BR** em seu projeto, adicione a seguinte dependência ao seu 
 
 ```toml
 [dependencies]
-rust-br = "0.2.0"
+rust-br = "0.3.2"
 ```
 
 ## Como Usar
