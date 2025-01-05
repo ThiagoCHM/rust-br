@@ -4,7 +4,22 @@
 
 ## Descrição
 
-Esta crate fornece funções para validar números de CPF, CNPJ, CNH, dentre outros, essenciais para aplicações que lidam com cadastros de pessoas físicas e jurídicas no Brasil.
+Esta crate fornece funções para validar documentos de CPF, CNPJ, CNH, dentre outros, essenciais para aplicações que lidam com cadastros de pessoas físicas e jurídicas no Brasil. 
+Vale a observação, não verificamos se determinado documento pertence a um certo indivíduo, mas se os dados inseridos atendem aos padrões estabelecidos pelos Orgãos Reguladores de cada um deste documentos.
+
+## Lista de Documentos
+
+ • CPF
+ • CNPJ
+ • CNH
+ • Passaporte Brasileiro*
+ • CTPS (Em Breve)
+ • Título de Eleitor (Em Breve)
+ • Certidão de Nascimento (Em Breve)
+ • Certidão de Casamento (Em Breve)
+ • Certidão de Óbito (Em Breve)
+
+ * Aceita a entrada de caracteres maiúsculos e minusculos.
 
 ## Instalação
 
@@ -12,7 +27,7 @@ Para usar o **Rust-BR** em seu projeto, adicione a seguinte dependência ao seu 
 
 ```toml
 [dependencies]
-rust-br = "0.3.2"
+rust-br = "0.4.0"
 ```
 
 ## Como Usar
@@ -44,7 +59,6 @@ fn main() {
     }
 }
 ```
-
 ### Verificação de CNH
 ```
 use rust_br::cnh;
@@ -55,6 +69,19 @@ fn main() {
         println!("CNH válido!");
     } else {
         println!("CNH inválido.");
+    }
+}
+```
+### Verificação de Passaporte Brasileiro
+```
+use rust_br::passport;
+
+fn main() {
+    let passaporte = "AA112233";
+    if cnh(passaporte) {
+        println!("Passaporte Brasileiro válido!");
+    } else {
+        println!("Passaporte Brasileiro inválido.");
     }
 }
 ```
