@@ -4,7 +4,7 @@
 
 ## Descrição
 
-Esta crate fornece funções para validar números de CPF e CNPJ, essenciais para aplicações que lidam com cadastros de pessoas físicas e jurídicas no Brasil.
+Esta crate fornece funções para validar números de CPF, CNPJ, CNH, dentre outros, essenciais para aplicações que lidam com cadastros de pessoas físicas e jurídicas no Brasil.
 
 ## Instalação
 
@@ -41,6 +41,20 @@ fn main() {
         println!("CNPJ válido!");
     } else {
         println!("CNPJ inválido.");
+    }
+}
+```
+
+### Verificação de CNH
+```
+use rust_br::cnh;
+
+fn main() {
+    let numero_cnh = "12345678910";
+    if cnh(numero_cnh) {
+        println!("CNH válido!");
+    } else {
+        println!("CNH inválido.");
     }
 }
 ```
