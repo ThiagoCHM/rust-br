@@ -136,6 +136,7 @@ fn main() {
 }
 ```
 
+
 ```
 // Número Móvel Válido com DDD de Santa Catarina
 
@@ -151,6 +152,34 @@ fn main() {
         println!("Região: {}", resultado.region.unwrap());
     } else {
         println!("Número de telefone inválido.");
+    }
+}
+```
+### Verificação de URL
+```
+use rust_br::url;
+
+fn main() {
+    let url1 = "https://www.example.com";
+    let url2 = "ftp://example.com";
+    let url3 = "http://invalid_domain";
+
+    if url(url1) {
+        println!("'{}' é uma URL válida!", url1);
+    } else {
+        println!("'{}' é uma URL inválida.", url1);
+    }
+
+    if url(url2) {
+        println!("'{}' é uma URL válida!", url2);
+    } else {
+        println!("'{}' é uma URL inválida.", url2);
+    }
+
+    if url(url3) {
+        println!("'{}' é uma URL válida!", url3);
+    } else {
+        println!("'{}' é uma URL inválida.", url3);
     }
 }
 ```
