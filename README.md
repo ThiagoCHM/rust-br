@@ -95,6 +95,65 @@ fn main() {
     }
 }
 ```
+### Verificação de E-mail
+```
+use rust_br::mail;
+
+fn main() {
+    let email1 = "usuario@example.com";
+    let email2 = "usuario@exemplo";
+
+    if mail(email1) {
+        println!("'{}' é um e-mail válido!", email1);
+    } else {
+        println!("'{}' é um e-mail inválido.", email1);
+    }
+
+    if mail(email2) {
+        println!("'{}' é um e-mail válido!", email2);
+    } else {
+        println!("'{}' é um e-mail inválido.", email2);
+    }
+}
+```
+### Verificação de Telefones Válidos (Identifica DDD e Área)
+```
+ // Número Fixo Válido com DDD de São Paulo
+
+use rust_br::phone;
+
+fn main() {
+    let numero_telefone = "1134567890";
+    let resultado = phone(numero_telefone);
+
+    if resultado.is_valid {
+        println!("Número de telefone válido!");
+        println!("Estado: {}", resultado.state.unwrap());
+        println!("Região: {}", resultado.region.unwrap());
+    } else {
+        println!("Número de telefone inválido.");
+    }
+}
+```
+
+```
+// Número Móvel Válido com DDD de Santa Catarina
+
+use rust_br::phone;
+
+fn main() {
+    let numero_telefone = "48987654321";
+    let resultado = phone(numero_telefone);
+
+    if resultado.is_valid {
+        println!("Número de telefone válido!");
+        println!("Estado: {}", resultado.state.unwrap());
+        println!("Região: {}", resultado.region.unwrap());
+    } else {
+        println!("Número de telefone inválido.");
+    }
+}
+```
 
 ## Contribuindo
 Contribuições são bem-vindas! Se você encontrar algum problema ou tiver sugestões de melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
